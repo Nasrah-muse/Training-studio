@@ -185,7 +185,7 @@ header{
       height: 31.461875rem;
      display: flex;
      flex-direction: column;
-     gap: 3.75rem;
+     gap: 2rem;
 
    }
    .container .features-items .feature-item{
@@ -261,8 +261,7 @@ header{
    display: flex;
    flex-direction: column;
    width: 23.75rem;
-   height: 35.52rem;
-   gap: 1.5rem;
+    gap: 1.5rem;
    cursor: pointer;
 
   }
@@ -322,6 +321,7 @@ header{
       }
       #schedules{
         width: 100%;
+        height: 1060px;
          background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(31, 31, 30, 0.7)),url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg') no-repeat center/cover;
         
   
@@ -333,8 +333,7 @@ header{
         align-items: center;
         justify-content: center;
         gap: 2.5rem;
-      padding-bottom: 140px;
-      }
+       }
      
       #schedules .container .section-heading h2{
         font-size: 2rem;
@@ -473,10 +472,14 @@ header{
  /* Tablets and Smartphones */
 @media (max-width: 768px) {
   header {
-  
-      background-color: #f2f2f2;
+       background-color: #f2f2f2;
       box-shadow: 0 0 10px #000;
+      z-index: 1000;
       
+  }
+  .container{
+    width: 100%;
+    overflow: hidden;
   }
  
   .menu {
@@ -504,6 +507,7 @@ header{
       position: fixed;
       background-color: #f2f2f2;
       height: 425px;
+      z-index: 1001;
       transform: translateY(0%);
       transition: transform 0.5s;
   }
@@ -540,8 +544,14 @@ header{
 
    .container .all-features{
      flex-direction: column;
+    }
+   
+ .container .all-features.feature{
+  width: 100%;
+  height: 100%;
   }
   .container .all-tabs{
+     
      flex-direction: column;
      align-items: center;
         }
