@@ -255,12 +255,12 @@ header{
    }
    .container .all-tabs{
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
       }
   .tab{
    display: flex;
    flex-direction: column;
-   width: 23.75rem;
+   width: 50%;
     gap: 1.5rem;
    cursor: pointer;
 
@@ -305,7 +305,7 @@ header{
  }
  .container .article{
   width: 100%;
-  height: 132.64875rem;
+  height: auto;
    display: flex;
    flex-direction: column;
 
@@ -321,8 +321,8 @@ header{
       }
       #schedules{
         width: 100%;
-        height: 1060px;
-         background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(31, 31, 30, 0.7)),url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg') no-repeat center/cover;
+        height: auto;
+         background:url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/schedule-bg.jpg') no-repeat center/cover;
         
   
       }
@@ -332,7 +332,7 @@ header{
         color: #fff;
         align-items: center;
         justify-content: center;
-        gap: 2.5rem;
+        gap: 2rem;
        }
      
       #schedules .container .section-heading h2{
@@ -358,18 +358,24 @@ header{
            .days a:hover{
             color: #ed563b;
            }
-         .table {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-collapse: collapse;
-           text-align: center;
-       }
-       .table td {
-        border: 1px solid #fff;
-        padding: 2rem;
-        text-align: center;
-      }
+           .table-container {
+            width: 80%;
+              padding: 20px;
+          }
+        
+        table {
+            width: 100%;
+             border-collapse: collapse;
+        }
+        
+        th, td {
+            padding: 15px;
+            text-align: center;
+            font-size: 1rem;
+            border: 1px solid #fff;
+        }
+        
+      
       #trainers .container .testimonials{
         display: flex;
         gap: 2rem;
@@ -415,38 +421,61 @@ header{
           .map{
             width: 50%;
            }
-        
-          .contact-form{
-              width: 50%;
-               background:url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg');
-               display: flex;
-               justify-content: center;
-                align-items: center;
-        
-          }
-          .contact-form .form{
-            width: 85%;
-             padding: 40px;
-            height: 27.5rem;
-            border-radius: 5px;
-             background-color: #fff;
-        
-          }
-          .form fieldset {
-            width: 100%;
-             display: flex;
+           .contact-form {
+            width: 50%;
+            background: url('https://templatemo.com/templates/templatemo_548_training_studio/assets/images/contact-bg.jpg');
+            background-size: cover;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
             flex-direction: column;
-            gap: 1rem;
-            color: #7a7a7a;
-            font-size: 0.8125rem;
-            border: 1px solid #ddd;
-            background-color: #fff;
-            outline: none;
-            line-height: 40px;
-            padding: 0 10px;
-            margin-bottom: 1.875rem;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-form form{
+          width: 90%;
+          background-color: #fff;
+          padding: 3rem;
+        }
+
+        .inputs {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            
+        }
+        .info {
+          display: flex;
+          gap: 1rem;
+        }
+        .input {
+             width: 100%;
+        }
         
-           }
+        fieldset {
+            width: 100%;
+            border: none;
+          
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+        }
+        
+        input::placeholder, textarea::placeholder {
+            color: #999;
+        }
+         
+       
+        
          footer .container{
           display: flex;
           flex-direction: column;
@@ -555,6 +584,18 @@ header{
      flex-direction: column;
      align-items: center;
         }
+        .tab{
+           width: 90%;
+       
+         }
+         .container .article{
+          width: 90%;
+           gap: 1rem;
+        
+           }
+           .table-container {
+            width: 100%;
+           }
         #trainers .container .testimonials{
            flex-direction: column;
           align-items: center;
@@ -572,8 +613,10 @@ header{
         
           .contact-form{
               width: 100%;
-              
-        
+            
+          }
+          .info {
+             flex-direction: column;
           }
            
        
